@@ -1,0 +1,11 @@
+variavel,descricao,tipo,subtipo
+model,O modelo do carro.,qualitativa,nominal
+year,O ano de fabricação do carro.,quantitativa,discreta
+price,O preço do carro.,quantitativa,continua
+transmission,O tipo de transmissão usada no carro.,qualitativa,nominal
+mileage,A quilometragem do carro.,quantitativa,continua
+fuelType,O tipo de combustível usado pelo carro.,qualitativa,nominal
+tax,A taxa de imposto aplicável ao carro.,quantitativa,continua
+mpg,A eficiência em milhas por galão do carro.,quantitativa,continua
+engineSize,O tamanho do motor do carro.,quantitativa,continua
+Manufacturer,O fabricante do carro.,qualitativa,nominal
