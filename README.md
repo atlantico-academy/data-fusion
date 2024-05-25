@@ -1,113 +1,103 @@
-# <Título do projeto>
+# Data Fusion 
 
-Insira aqui um resumo do projeto que será construído. Tente apresentar uma justificativa para o projeto. É desejável que também se insira um [graphical abstract](https://www.elsevier.com/authors/tools-and-resources/visual-abstract).
+Este projeto realiza uma análise abrangente dos dados de carros de 1970 a 2024. Utilizando um dataset do Kaggle, exploramos tendências, características e outras informações relevantes sobre os veículos ao longo dos anos. Esta análise pode ajudar em estudos de mercado, desenvolvimento de novos produtos e estratégias de marketing.
+https://www.acij.com.br/index/wp-content/uploads/2018/05/venda-carros-golpe-1024x536.jpg
 
 ## Desenvolvedores
- - [Nome do desenvolvedor #1](url-do-github-do-desenvolvedor-#1)
- - [Nome do desenvolvedor #2](url-do-github-do-desenvolvedor-#2)
- - [Nome do desenvolvedor #3](url-do-github-do-desenvolvedor-#3)
- - [Nome do desenvolvedor #4](url-do-github-do-desenvolvedor-#4)
- - ...
 
----
-
-> **Nota**: todo o texto abaixo é somente para entendimento do usuário do template. Por favor remova-o quando for atualizar este `README.md`.
+- Sarah Almeida Dalla Valle Prior #1
+- João Vinicius Araújo Rocha #2
+- Kassia Cristina de Sousa Lopes #3
+- Alesangela Bezerra da Fonseca #4
 
 ## Funcionalidades
 
-Esse template foi inicialmente baseado no [template de ciência de dados do cookiecutter](https://drivendata.github.io/cookiecutter-data-science/), mas ao longo do tempo várias modificações foram sendo realizadas. Atualmente o template tem as seguintes características:
- - Utilização do arquivo `pyproject.toml` como centralizador de dependências;
- - Configuração para criação de aplicação `streamlit`;
- - Utilização de [jupyter notebooks](https://jupyter.org/) para arquivos de análise;
- - Documentação com o [mkdocs](https://www.mkdocs.org/) ([material design](https://squidfunk.github.io/mkdocs-material/) theme)
+Esse template foi inicialmente baseado no template de ciência de dados do cookiecutter, mas ao longo do tempo várias modificações foram sendo realizadas. Atualmente o template tem as seguintes características:
+
+- Utilização do arquivo `pyproject.toml` como centralizador de dependências;
+- Configuração para criação de aplicação Streamlit;
+- Utilização de Jupyter Notebooks para análise de dados;
+- Documentação com o MkDocs (Material Design Theme).
 
 ## Instruções
 
 ### Requisitos
 
 Para utilizar este template, você precisará de um ambiente com os seguintes softwares:
- - git
- - Python 3.8
- - Poetry `1.1.13` ou superior
+
+- `git`
+- Python 3.8
+- Poetry 1.1.13 ou superior
 
 É aconselhável o uso do `pyenv` para o gerenciamento de versões do Python.
 
 ### Iniciando um novo projeto
 
-Para iniciar um novo projeto você precisa ter instalado na sua máquina as aplicações citadas na seção anterior, depois disso basta:
+Para iniciar um novo projeto a partir deste template:
 
-1. clicar no botão **Use this template** (ou "Usar este modelo").
+1. Clicar no botão **"Use this template"** (ou "Usar este modelo").
 2. Digitar um nome para seu repositório e uma descrição opcional.
-3. Escolher a visibilidade do projeto (Publica ou privada).
-4. Clicar em **Create repository from template** (Criar repositório a partir do modelo).
-
-Pronto, acaba de criar um repositório a partir deste modelo. Para mais informações sobre o uso de templates, acesse a [documentação oficial](https://docs.github.com/pt/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
-
+3. Escolher a visibilidade do projeto (Pública ou privada).
+4. Clicar em **"Create repository from template"** (Criar repositório a partir do modelo).
 
 ### Contribuindo com um repositório já criado
 
-Depois de criar o repositório, para começar a modificá-lo e/ou contribuir com repositórios já criados,  você precisa cloná-lo. Para isso, siga os seguintes passos:
+Para clonar o repositório e começar a contribuir:
 
-1. Acima da lista de arquivos, clique no botão **Code** (em verde).
-2. Copie a URL para o repositório.
-    - Tente clonar utilizando uma chave **SSH**. Para isso, clique na aba **SSH** e em seguida clique no ícone de cópia.
-3. Abra o terminal.
-4. Altere o diretório de trabalho atual para o local que deseja ter o diretório clonado.
-5. Digite `git clone` e cole a URL que você copiou anteriormente:
+1. Acima da lista de arquivos, clique no botão **"Code"** (em verde).
+2. Copie a URL do repositório.
+3. Utilize uma chave SSH para clonar:
+    ```bash
+    git clone git@github.com:NOME-DE-USUARIO/REPOSITORIO.git
+    ```
+4. Navegue até o diretório do repositório clonado:
+    ```bash
+    cd REPOSITORIO
+    ```
+5. Instale as dependências do projeto:
+    ```bash
+    poetry install
+    ```
+6. Ative o ambiente virtual criado pelo Poetry:
+    ```bash
+    poetry shell
+    ```
 
-```
-git clone git@github.com:NOME-DE-USUARIO/REPOSITORIO.git
-```
-6. Pressione **Enter** para criar seu clone local.
+## Utilização
 
-Proto, com isso você acaba de clonar um repositório. Para mais informações sobre a clonagem de arquivos, acesse a [documentação oficial](https://docs.github.com/pt/repositories/creating-and-managing-repositories/cloning-a-repository).
+Após a instalação, você pode iniciar a aplicação Streamlit para visualizar a análise dos dados:
 
-Com o repositório clonado, você precisa navegar até a pasta local, usando o comando :
-
-```
-cd REPOSITORIO
-```
-
-Estando na pasta do repositório, basta instalar as dependências do projeto utilizando o comando:
-
-```
-poetry install
-```
-
-Ele irá instalar todas as dependências contidas no arquivo `pyproject.toml`. Depois disso basta ativar o ambiente virtual criado pelo Poetry utilizando o comando:
-
-```
-poetry shell
+```bash
+streamlit run app.py
 ```
 
-Para mais informações sobre os comandos do Poetry, visite a [documentação oficial](https://python-poetry.org/docs/).
+Ou abrir e executar os Jupyter Notebooks para explorar as análises de dados:
 
-Para contribuir com um projeto, tente utilizar uma metodologia adequada. Utilize [este artigo](https://omadson.github.io/site/blog/2022/software-development-workflow/) para obter mais informações.
-
-
-### Organização de diretórios
-
-
+```bash
+jupyter notebook notebooks/
 ```
+
+## Organização de Diretórios
+
+```plaintext
 .
 ├── data/              # Diretório contendo todos os arquivos de dados
-│   ├── external/      # Arquivos de dados de fontes externas
-│   ├── interim/       # Arquivos de dados intermediários
-│   ├── processed/     # Arquivos de dados processados
-│   └── raw/           # Arquivos de dados originais, imutáveis
-├── docs/              # Documentação gerada através da biblioteca mkdocs
+│   ├── external/      # Arquivos de dados de fontes externas
+│   ├── interim/       # Arquivos de dados intermediários
+│   ├── processed/     # Arquivos de dados processados
+│   └── raw/           # Arquivos de dados originais, imutáveis
+├── docs/              # Documentação gerada através da biblioteca MkDocs
 ├── models/            # Modelos treinados e serializados, predições ou resumos de modelos
 ├── notebooks/         # Diretório contendo todos os notebooks utilizados nos passos
 ├── references/        # Dicionários de dados, manuais e todo o material exploratório
 ├── src/               # Código fonte utilizado nesse projeto
-│   ├── data/          # Classes e funções utilizadas para download e processamento de dados
-│   ├── deployment/    # Classes e funções utilizadas para implantação do modelo
-│   └── model/         # Classes e funções utilizadas para modelagem
-├── app.py             # Arquivo com o código da aplicação do streamlit
-├── Procfile           # Arquivo de configuração do heroku
+│   ├── data/          # Classes e funções utilizadas para download e processamento de dados
+│   ├── deployment/    # Classes e funções utilizadas para implantação do modelo
+│   └── model/         # Classes e funções utilizadas para modelagem
+├── app.py             # Arquivo com o código da aplicação do Streamlit
+├── Procfile           # Arquivo de configuração do Heroku
 ├── pyproject.toml     # Arquivo de dependências para reprodução do projeto
 ├── poetry.lock        # Arquivo com sub-dependências do projeto principal
 ├── README.md          # Informações gerais do projeto
 └── tasks.py           # Arquivo com funções para criação de tarefas utilizadas pelo invoke
-
 ```
