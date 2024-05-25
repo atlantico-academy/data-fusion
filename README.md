@@ -47,11 +47,11 @@ Para clonar o repositório e começar a contribuir:
 2. Copie a URL do repositório.
 3. Utilize uma chave SSH para clonar:
     ```bash
-    git clone git@github.com:NOME-DE-USUARIO/REPOSITORIO.git
+    git clone https://github.com/atlantico-academy/equipe4-2024.1
     ```
 4. Navegue até o diretório do repositório clonado:
     ```bash
-    cd REPOSITORIO
+    cd equipe4-2024.1
     ```
 5. Instale as dependências do projeto:
     ```bash
