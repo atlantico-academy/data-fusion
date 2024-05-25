@@ -1,7 +1,6 @@
 # Data Fusion 
 
 Este projeto realiza uma análise abrangente dos dados de carros de 1970 a 2024. Utilizando um dataset do Kaggle, exploramos tendências, características e outras informações relevantes sobre os veículos ao longo dos anos. Esta análise pode ajudar em estudos de mercado, desenvolvimento de novos produtos e estratégias de marketing.
-https://www.acij.com.br/index/wp-content/uploads/2018/05/venda-carros-golpe-1024x536.jpg
 
 ## Desenvolvedores
 
